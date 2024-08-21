@@ -13,6 +13,7 @@ def option(x):
         temp = ''.join(li)
         if li[-1] in operators and li[-2] in operators:
             del li[-2]
+            temp = ''.join(li)
     
     elif x in ['del','=','C','%','.']:
         if x == 'del':
